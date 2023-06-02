@@ -1,7 +1,12 @@
+.guestBook {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .title {
   text-align: center;
   font-size: 1.2rem;
-
+  font-weight: 500;
   letter-spacing: 0.12rem;
   color: #cc7c47c9;
   font-family: "Roboto";
@@ -13,11 +18,13 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 5rem;
+  margin-bottom: 6.5rem;
 
   color: #000407;
 }
-.card {
+
+.card,
+.card3 {
   margin: 2.5rem 1.3rem;
   box-shadow: 0 0px 7px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -48,19 +55,75 @@
   font-size: 1.15rem;
   font-weight: 400;
   color: #6c757d;
-  line-height: 2.2rem;
+  line-height: 2.3rem;
 }
 .icon {
   color: orange;
   margin-right: 0.35rem;
 }
 
-@media screen and (min-width: 992px) {
-  .card {
-    width: calc(33.33% - 1.5rem);
+@media screen and (min-width: 767.98px) {
+  .secondTitle {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
   }
+  .cards {
+    /* quiero dos card por fila y la ultima card centrada */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .card3 {
+    grid-column: span 2;
+    margin: 1.5rem 17.5rem 2rem 17.5rem;
+    box-shadow: 0 0px 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+}
 
+@media screen and (min-width:1119.98px) {
   .cards {
     display: flex;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .card,
+  .card3 {
+    margin: 2.5rem 0.5rem;
+    box-shadow: 0 0px 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .secondTitle {
+    font-size: 2.7rem;
+    margin-bottom: 3rem;
+  }
+  .title {
+    font-size: 1.35rem;
+  }
+  .cardImg {
+    padding: 3rem 3rem 1rem 3rem;
+  }
+  .description {
+    padding: 0rem 4rem 3rem 4rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .guestBook {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards {
+    
+    max-width: 1400px;
+  }
+  .description {
+    padding: 2rem 3.5rem 4rem 3.5rem;
+    font-size: 1.4rem;
   }
 }

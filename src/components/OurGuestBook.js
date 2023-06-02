@@ -1,7 +1,7 @@
 import styles from "./OurGuestBook.module.css";
-import Avatar1 from "../img/avatar_01.jpg";
-import Avatar2 from "../img/avatar_02.jpg";
-import Avatar3 from "../img/avatar_03.jpg";
+import Avatar1 from "../assets/avatar_01.jpg";
+import Avatar2 from "../assets/avatar_02.jpg";
+import Avatar3 from "../assets/avatar_03.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
@@ -50,7 +50,7 @@ const OurGuestBook = () => {
             to express our warmest gratitude.
           </p>
         </div>
-        <div className={styles.card}>
+        <div className={styles.card3}>
           <div className={styles.cardImg}>
             <img src={Avatar2} alt="Avatar" className={styles.img} />
 
