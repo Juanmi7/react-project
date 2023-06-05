@@ -1,0 +1,131 @@
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #cc7c47c9;
+  font-family: "Roboto";
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+.secondTitle {
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+
+  color: #000407;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card,
+.card3 {
+  margin: 2.5rem 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cardHeader {
+  margin-left: 1.5rem;
+  margin-top: 1.1rem;
+}
+.nameCard {
+  font-family: "poppins";
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: -1.8rem;
+  color: #000407;
+}
+.description3,
+.description {
+  padding: 1rem 3.5rem 1.5rem 3.5rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #6c757d;
+  line-height: 2.3rem;
+}
+.price {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #cc7c47c9;
+  font-family: "Roboto";
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 767.98px) {
+  .secondTitle {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .card3 {
+    grid-column: span 2;
+  }
+  .description3 {
+    max-width: 33%;
+    padding: 1rem 0em 1.5rem 0rem;
+  }
+}
+
+@media screen and (min-width: 1119.98px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .card3 {
+    grid-column: inherit;
+  }
+  .title {
+    margin-top: 10rem;
+    font-size: 1.35rem;
+  }
+  .secondTitle {
+    font-size: 2.7rem;
+    margin-bottom: 5rem;
+  }
+  .description3{
+    max-width: 100%;
+    padding: 1rem 3.5rem 1.5rem 3.5rem;
+ }
+ .description,
+    .description3{
+    margin: 0rem 5rem 0rem 5rem;
+    }
+    .nameCard{
+      margin-top: -1.5rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .exclusiveFood {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .cards {
+      
+      max-width: 1400px;
+    }
+    .description
+    .description3 {
+      padding: 2rem 3.5rem 4rem 3.5rem;
+      font-size: 1.4rem;
+    }
+  
+  }

@@ -5,7 +5,6 @@ import Avatar3 from "../assets/avatar_03.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-//crear una card que contiene una imagen alado del nombre del invitado y debajo un parrafo con el mensaje
 const OurGuestBook = () => {
   return (
     <section className={styles.guestBook}>
