@@ -61,6 +61,68 @@
   font-family: "Roboto";
   margin-bottom: 4rem;
 }
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    padding: 2rem;
+    max-width: 750px;
+    text-align: center;
+    border-radius: 10%;
+  }
+  
+  .modalImg {
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    padding: 1rem 2rem 0rem 2rem;
+  }
+  .icon {
+    font-size: 3rem;
+    color: #ee8239c9;
+    margin-bottom: 5rem;
+    margin-top: -3rem;
+    margin-left: 1rem;
+  }
+  .icon:hover {
+    color: #f16507c9;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: rotate(360deg);
+  }
+  
+  .modalCloseButton {
+    margin-top: -3rem;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    background-color: #ee8239c9;
+    cursor: pointer;
+    border-radius: 5%;
+    transition: all 0.2s ease-in-out;
+  }
+  .modalCloseButton:hover {
+    background-color: #f16507c9;
+    color: white;
+  }
+  
+
+.card:hover,
+.card3:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
 @media screen and (min-width: 767.98px) {
   .secondTitle {
     font-size: 2.2rem;
@@ -87,7 +149,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .card3 {
     grid-column: inherit;
   }
@@ -99,33 +161,31 @@
     font-size: 2.7rem;
     margin-bottom: 5rem;
   }
-  .description3{
+  .description3 {
     max-width: 100%;
     padding: 1rem 3.5rem 1.5rem 3.5rem;
- }
- .description,
-    .description3{
+  }
+  .description,
+  .description3 {
     margin: 0rem 5rem 0rem 5rem;
-    }
-    .nameCard{
-      margin-top: -1.5rem;
-    }
+  }
+  .nameCard {
+    margin-top: -1.5rem;
+  }
 }
 @media screen and (min-width: 1400px) {
-    .exclusiveFood {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-    .cards {
-      
-      max-width: 1400px;
-    }
-    .description
-    .description3 {
-      padding: 2rem 3.5rem 4rem 3.5rem;
-      font-size: 1.4rem;
-    }
-  
+  .exclusiveFood {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+  .cards {
+    max-width: 1400px;
+  }
+  .description .description3 {
+    padding: 2rem 3.5rem 4rem 3.5rem;
+    font-size: 1.4rem;
+  }
+
+}
